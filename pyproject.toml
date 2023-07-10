@@ -42,3 +42,26 @@ dependencies = [
 test = [
     "pytest"
 ]
+docs = [
+    "sphinx",
+    "myst-parser",
+    "furo",
+]
+
+[tool.ruff]
+select = [
+  "E", "F", "W", # flake8
+  "B",           # flake8-bugbear
+  "I",           # isort
+  "PGH",         # pygrep-hooks
+  "RUF",         # Ruff-specific
+  "UP",          # pyupgrade
+]
+extend-ignore = [
+  "E501",   # Line too long
+]
+target-version = "py38"
+src = ["src"]
+unfixable = [
+  "F841", # Removes unused variables
+]

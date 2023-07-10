@@ -2,6 +2,8 @@
 
 `package` is a simple Python library that contains a single function for rescaling arrays.
 
+<!-- SPHINX-START -->
+
 ## Installation
 
 Download the source code and use the package manager [pip](https://pip.pypa.io/en/stable/) to install `package`:
